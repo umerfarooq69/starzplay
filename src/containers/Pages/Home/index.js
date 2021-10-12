@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Button } from "reactstrap";
+import Button from '../../../componenets/Button'
 import Data from '../../../homepage.json'
 import NavbarMain from '../../../componenets/Navbar'
 import Footer from '../../../componenets/Footer'
