@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import './style.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { ThumbnaisImg } from "../../styledComponents";
 
 const CenterMode = (porps) => {
     const { data, autoplay, slidesToShow, customClass, arrows, autoplaySpeed, speed, pauseOnHover, thumbnailsSize, slidesToScroll } = porps
@@ -27,7 +28,7 @@ const CenterMode = (porps) => {
             {data.layoutTitles.titles.map((item, key) => {
                 return (
                     item.thumbnails[thumbnailsSize] && item.thumbnails[thumbnailsSize].url ?
-                        <div key={key}>  <img src={item.thumbnails[thumbnailsSize].url} alt={item.thumbnails[thumbnailsSize].title} /> </div>
+                        <div key={key}>  <ThumbnaisImg src={item.thumbnails[thumbnailsSize].url} alt={item.thumbnails[thumbnailsSize].title} /> </div>
                         : null
                 )
             })}

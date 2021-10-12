@@ -4,7 +4,10 @@ import Data from '../../../homepage.json'
 import NavbarMain from '../../../componenets/Navbar'
 import Footer from '../../../componenets/Footer'
 import HeroSlider from '../../../componenets/HeroSlider'
+import styled from "styled-components";
 import './style.scss'
+
+const ExploreBtn = styled.div `margin-bottom: 50px;width: 100%;text-align: center;`;
 
 const Home = () => {
     return (
@@ -27,7 +30,7 @@ const Home = () => {
                 })
             }
             {/* Explore Button */}
-            <div className='text-center explore__btn'>  <Button>Explore More</Button>  </div>
+            <ExploreBtn>  <Button>Explore More</Button>  </ExploreBtn>
             {/* Footer */}
             <Footer data={Data.footer} />
         </Fragment>
