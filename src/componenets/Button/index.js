@@ -1,14 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-
-// Styled component named StyledButton
-const StyledButton = styled.button
-    `background-color: #fd8f58;
-        color: #fff;
-        padding: 10px 70px;
-        box-shadow: 0 0 0 0 !important;
-        border: 0px;`
-    ;
+import { StyledButton } from "../../styledComponents";
 
 const Button = (props) => {
     const { children } = props

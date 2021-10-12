@@ -22,15 +22,11 @@ const CenterMode = (porps) => {
         prevArrow: <div className='preArrow arrows'>pre</div>,
         nextArrow: <div className='nextArrow arrows'>next</div>,
     };
-    console.log('1wwww')
+
     return (
         <Slider {...settings}>
             {data.layoutTitles.titles.map((item, key) => {
-                return (
-                    item.thumbnails[thumbnailsSize] && item.thumbnails[thumbnailsSize].url ?
-                        <div key={key}>  <ThumbnaisImg src={item.thumbnails[thumbnailsSize].url} alt={item.thumbnails[thumbnailsSize].title} /> </div>
-                        : null
-                )
+                return (item.thumbnails[thumbnailsSize] && item.thumbnails[thumbnailsSize].url ? <div key={key}>  <ThumbnaisImg src={item.thumbnails[thumbnailsSize].url} alt={item.thumbnails[thumbnailsSize].title} /> </div> : null)
             })}
         </Slider>
     );
